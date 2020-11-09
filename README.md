@@ -42,4 +42,4 @@ localCache：本地是否开启缓存
 whiteList：接收客户端ip白名单，多个以逗号分隔  
 blackList：接收客户端ip黑名单，多个以逗号分隔  
   
-重复造轮子（https://gitee.com/Uller/GLLog）是学习一门语言的最好方法，看着丑陋的golang，写起来非常舒服。
+重复造轮子（ https://gitee.com/Uller/GLLog ）是学习一门语言的最好方法，看着丑陋的golang，写起来非常舒服。
