@@ -37,7 +37,7 @@ localCache：本地是否开启缓存
 日志基础配置  
 localIp：本地服务器ip  
 localPort：本地服务器端口  
-storageType：日志存储类型，枚举file：本地文件存储，db：数据库存储 
+storageType：日志存储类型，枚举file：本地文件存储，db：数据库存储  
 logFilePath：storageType=file，本地存储文件路径  
 sendInterval：日志存储时间间隔，单位秒  
 sendCount：日志缓存数量，开启缓存后当日志数量到达一定值后忽略SendInterval值将日志存储  
