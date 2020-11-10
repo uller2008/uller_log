@@ -10,7 +10,7 @@ log_client          客户端调用示例
 log_server          服务器端调用示例  
     |-contfig.ini   配置文件  
   
-##客户端配置文件说明
+## 客户端配置文件说明  
 [devLogDB]  
 数据库配置 
 
@@ -26,7 +26,7 @@ sendInterval：日志存储时间间隔，单位秒
 sendCount：日志缓存数量，开启缓存后当日志数量到达一定值后忽略SendInterval值将日志存储  
 localCache：本地是否开启缓存  
 
-##服务器端配置文件说明  
+## 服务器端配置文件说明  
 [devLogDB]  
 数据库配置  
 
