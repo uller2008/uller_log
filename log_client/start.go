@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	uller "github.com/uller/comm"
+	uller "github.com/uller2008/uller_log"
 	"math/rand"
 	"strconv"
 	"time"

@@ -1,4 +1,4 @@
-module uller/comm
+module github.com/uller2008/uller_log
 
 go 1.15
 
