@@ -111,6 +111,41 @@ func (logClient *LogClient)Debug(logger string,logMessage string,exception strin
 	return
 }
 
+func (logClient *LogClient)Error(logger string,logMessage string,exception string)(err error){
+	logData := []LogData{}
+	logData = append(logData,LogData{"",logClient.LocalIp,logClient.Consumer,"error",logger,logMessage,exception,"" ,logClient.Log.SendInterval,1})
+	logClient.Log.Push(logData)
+	return
+}
+
+func (logClient *LogClient)Info(logger string,logMessage string,exception string)(err error){
+	logData := []LogData{}
+	logData = append(logData,LogData{"",logClient.LocalIp,logClient.Consumer,"info",logger,logMessage,exception,"" ,logClient.Log.SendInterval,1})
+	logClient.Log.Push(logData)
+	return
+}
+
+func (logClient *LogClient)Warn(logger string,logMessage string,exception string)(err error){
+	logData := []LogData{}
+	logData = append(logData,LogData{"",logClient.LocalIp,logClient.Consumer,"warn",logger,logMessage,exception,"" ,logClient.Log.SendInterval,1})
+	logClient.Log.Push(logData)
+	return
+}
+
+func (logClient *LogClient)Fatal(logger string,logMessage string,exception string)(err error){
+	logData := []LogData{}
+	logData = append(logData,LogData{"",logClient.LocalIp,logClient.Consumer,"fatal",logger,logMessage,exception,"" ,logClient.Log.SendInterval,1})
+	logClient.Log.Push(logData)
+	return
+}
+
+func (logClient *LogClient)LogInfo(logger string,logMessage string,exception string)(err error){
+	logData := []LogData{}
+	logData = append(logData,LogData{"",logClient.LocalIp,logClient.Consumer,"loginfo",logger,logMessage,exception,"" ,logClient.Log.SendInterval,1})
+	logClient.Log.Push(logData)
+	return
+}
+
 func (logClient *LogClient)SendProfile(conn *net.TCPConn)(err error){
 	protocol := Protocol{}
 	clientProfile := ClientProfile{}

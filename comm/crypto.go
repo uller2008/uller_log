@@ -12,13 +12,12 @@ import (
 * auth guolei at 20191101
 * param data
 * return string data的32位md5值
- */
+*/
 func GetMD5Encode(data string) string {
 	h := md5.New()
 	h.Write([]byte(data))
 	return hex.EncodeToString(h.Sum(nil))
 }
-
 
 /*
 * 获取字符串16位md5值
